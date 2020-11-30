@@ -72,7 +72,8 @@ export default class ListProducts extends Component {
   handleChange = async (e) => {
     await this.setState({
       [e.target.name]: e.target.value,
-      toggle:false
+      toggle:false,
+      empty:false
     });
     const producto = this.state.categoria;
     this.seleccion(producto);
